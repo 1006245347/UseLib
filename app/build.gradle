@@ -37,11 +37,13 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //本地module依赖测试
-    implementation project(':np')
+//    implementation project(':np')
 
     //远程jitpack依赖测试
-//    implementation 'com.github.1006245347:UseLib:v1.0.5'
+    implementation 'com.github.1006245347:UseLib:v1.0.6'
 
-//    implementation 'com.tencent:mmkv:1.0.22'
-//    implementation 'com.github.1006245347:NpDemo:v0.0.1'
+    //实在是坑,打tag后再发布release,再到jitpack下获取依赖，所有的发布日志都是 status: error
+    //看日志一直是gradle无法获取，明明本地编译都能通过，后来把gradle的文件写法都改了，最后无意
+    //发现难道是代理设置的问题，把gradle.properties文件的内容上传后继续引用导致？最后发现真的是！
+
 }
