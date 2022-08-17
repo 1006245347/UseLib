@@ -28,7 +28,7 @@ android {
 }
 
 dependencies {
-
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -36,5 +36,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    //本地module依赖测试
     implementation project(':np')
+
+    //远程jitpack依赖测试
+//    implementation 'com.github.1006245347:UseLib:v1.0.1'
+
+//    implementation 'com.tencent:mmkv:1.0.22'
+//    implementation 'com.github.1006245347:NpDemo:v0.0.1'
 }
