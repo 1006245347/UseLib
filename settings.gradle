@@ -1,23 +1,23 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+////        maven { url 'https://jitpack.io' }
+//        google()
+//        maven { url 'https://repo1.maven.org/maven2/' }
+//        mavenCentral()
+//        jcenter()
+//    }
+//}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
 //        maven { url 'https://jitpack.io' }
-        google()
-        maven { url 'https://repo1.maven.org/maven2/' }
-        mavenCentral()
-        jcenter()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        maven { url 'https://jitpack.io' }
-        google()
-        maven { url 'https://repo1.maven.org/maven2/' }
-        mavenCentral()
-        jcenter()
-    }
-}
+//        google()
+//        maven { url 'https://repo1.maven.org/maven2/' }
+//        mavenCentral()
+//        jcenter()
+//    }
+//}
 rootProject.name = "UseLib"
 include ':app'
 include ':np'
