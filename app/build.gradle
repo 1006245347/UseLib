@@ -40,7 +40,9 @@ dependencies {
 //    implementation project(':np')
 
     //远程jitpack依赖测试
-    implementation 'com.github.1006245347:UseLib:v1.0.6'
+//    implementation 'com.github.1006245347:UseLib:v1.0.6'
+
+    implementation 'com.github.arksjs:NpUse:v0.0.3'
 
     //实在是坑,打tag后再发布release,再到jitpack下获取依赖，所有的发布日志都是 status: error
     //看日志一直是gradle无法获取，明明本地编译都能通过，后来把gradle的文件写法都改了，最后无意

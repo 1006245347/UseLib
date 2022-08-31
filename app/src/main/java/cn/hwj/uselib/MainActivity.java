@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import cn.hwj.np.NpUtils;
-import cn.hwj.sdk.GreeNp;
+import com.lyentech.sdk.GreeNp;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NpUtils.test();
         GreeNp.trackSearch("6666c");
     }
 }
